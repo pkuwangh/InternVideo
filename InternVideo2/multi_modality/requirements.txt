@@ -19,9 +19,9 @@ soundfile==0.12.1
 tensorflow==2.16.1
 termcolor==2.4.0
 timm==0.5.4
-torch==1.13.1+cu117
-torchaudio==0.13.1+cu117
-torchvision==0.14.1+cu117
+torch
+torchaudio
+torchvision
 tqdm==4.66.1
 transformers==4.28.1
 wandb==0.16.1
