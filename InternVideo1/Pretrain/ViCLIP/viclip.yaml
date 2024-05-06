@@ -119,7 +119,6 @@ dependencies:
       - opencv-python==4.9.0.80
       - packaging==23.2
       - pandas==2.0.3
-      - petrel-oss-sdk==2.2.2.post10086
       - protobuf==4.25.3
       - psutil==5.9.8
       - py-cpuinfo==9.0.0
