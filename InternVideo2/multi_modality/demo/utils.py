@@ -227,6 +227,7 @@ class InternVideo2_Stage2(nn.Module):
         encoder_name = self.config.model.vision_encoder.name
         
         if encoder_name == 'pretrain_internvideo2_1b_patch14_224':
+            print(f"vision_encoder: using {encoder_name}")
             vision_encoder = pretrain_internvideo2_1b_patch14_224(self.config.model)
         else:
             raise ValueError(f"Not implemented: {encoder_name}")
@@ -254,6 +255,7 @@ class InternVideo2_Stage2(nn.Module):
         encoder_name = self.config.model.text_encoder.name
 
         if "bert" in encoder_name:
+            print(f"text_encoder: using {encoder_name}")
             text_encoder = build_bert(
                 self.config.model,
                 self.is_pretrain,
