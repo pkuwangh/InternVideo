@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "internvideo2_multi_modality"
+version = "0.1.0"
+dependencies = [
+    "apex==0.9.10dev",
+    "av==11.0.0",
+    "decord==0.6.0",
+    "deepspeed==0.10.1",
+    "einops==0.7.0",
+    "flash_attn==2.0.8",
+    "fvcore==0.1.5.post20221221",
+    "imageio==2.31.1",
+    "librosa==0.10.1",
+    "numpy==1.24.4",
+    "opencv_python==4.8.0.76",
+    "pandas==2.0.3",
+    "Pillow==10.0.0",
+    "psutil==5.9.5",
+    "PyYAML==6.0.1",
+    "scipy==1.13.0",
+    "soundfile==0.12.1",
+    "tensorflow==2.16.1",
+    "termcolor==2.4.0",
+    "timm==0.5.4",
+    "torch==2.2.1",
+    "torchaudio==2.2.1",
+    "torchvision==0.17.1",
+    "tqdm==4.66.1",
+    "transformers==4.28.1",
+    "wandb==0.16.1",
+    "peft",
+]
+requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = [
+    "internvideo2_multi_modality",
+    "internvideo2_multi_modality.configs",
+    "internvideo2_multi_modality.models",
+    "internvideo2_multi_modality.models.backbones",
+    "internvideo2_multi_modality.models.backbones.bert",
+    "internvideo2_multi_modality.models.backbones.beats",
+    "internvideo2_multi_modality.models.backbones.internvideo2",
+    "internvideo2_multi_modality.utils",
+]
